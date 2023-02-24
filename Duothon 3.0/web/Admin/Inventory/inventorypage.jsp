@@ -363,7 +363,7 @@ fieldset .logo {
     <br>
 
     <h1 style="text-transform: uppercase;" class="h">User Account Details...</h1>
-    <button style="float: right">Add New Drug</button>
+    <a href="../../profie_add/profile_html.jsp"><button style="float: right">Add New Drug</button></a>
     <br>
 
     <div class="container">

@@ -1,13 +1,21 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Airline Booking Form</title>
+    <title>Profile Update form</title>
     <link rel="stylesheet" href="style.css">
-     
+     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
 </head>
 <style>
@@ -103,105 +111,45 @@
     background: transparent;
     color:#fff
 }
-
-.back{
-    background-image:url(booking.jpg);
-    background-size: cover;
-}
 </style>
-<body class="back">
-    <br><br><br>
+<body>
  <div class="wrapper">  
-    <div class="container">
-        
-        
-        <form class="form-group" action="bookingActionPage.jsp" method="">
-            
-            <center>
-                <%
-                String msg= request.getParameter("msg");
+    <div class="container"><!--container-->
+        <form class="form-group"><!--form-->
+            <h1 class="text-center">Pharmacy Information</h1>
 
-                     if("valid".equals(msg)){
-                         %>         <h3 style="color: red">Successfully Updated</h3>
-                <%
-                     }
+            <div id="form"><!--form-->
+                <h3 class="text-white"> Details</h3>
 
-                     if("invalid".equals(msg)){
-             %>        <h3 style="color: red">Some thing Went Wrong! Try Again !</h3>
-             <%
-             }
-                %>
-            </center>
-            
-            <h1 class="text-center"><b>Airline Booking Form</b></h1>
-
-            
-            
-            <div id="form">
-                <h3 class="text-white">Booking Details</h3>
-                
+            <div id="input">
+                <input type="text" id="input-group" placeholder="Pharmacy's name">
+                <input type="text" id="input-group" placeholder="Address">
+                <input type="text" id="input-group" placeholder="Phone Number">
+                <input type="text" id="input-group" placeholder="Email">
+                <input type="text" id="input-group" placeholder="Website">
+                <input type="text" id="input-group" placeholder="Operating Hours">
+                <input type="text" id="input-group" placeholder="Pharmacy License">
                
-                <div id="input">       
-                    <input type="text" id="input-group" name="from" placeholder="From">
-                    <input type="text" id="input-group" name="to" placeholder="To">
-                    <input type="text" id="input-group" name="depdate" placeholder="Departure Date">
-                    <input type="text" id="input-group" name="deptime" placeholder="Departure Time">
-                
-                    <select name="airline"  id="input-group" style="background: black;">
-                    
-                    <option value="">Preffered Airline</option>
-                    <option value="">Srilankan Airline</option>
-                    <option value="">AirIndia</option>
-                    <option value="">SpaceJet</option>
-                </select>
-                    <select name="class" id="input-group" style="background: black;">
-                    <option value="">Preffered Seating</option>
-                    <option value="">Economy Class</option>
-                    <option value="">Business Class</option>
-                    <option value="">First Class</option>
-                </select>
-                </div>
+                </div><!--input-->
 
-                <div id="input2">
-                    <td>
-                      
-                        <input name="adult" type="number" id="input-group" placeholder="Adult">
-                        <input name="children" type="number" id="input-group" placeholder="Children(2-11years)">
-                        <input name="kids" type="number" id="input-group" placeholder="infant(under 2years)">
-                </div>
+                <div id="input5"><!--input5-->
+                    <h3 class="text-white">Owner Information</h3>
+                </div><!--input5-->
 
-                <div id="input3">
-                    <span id="input-group" class="text-primary">Select Your Fare</span> 
-                    <input type="radio" id="input-group" name="r">
-                    <label class="text-white" for="input-group">One Way</label>
-                    <input type="radio" id="input-group" value="A" name="radio">
-                    <label class="text-white" for="input-group">Round Trip</label>
-                </div>
+                <div id="input6"><!--input6-->
+                    <input type="text" id="input-group" placeholder="Name">
+                    <input type="number" id="input-group" placeholder="Address">
+                    <input type="email" id="input-group1" placeholder="Owner Phone Number">
+                        <input type="email" id="input-group1" placeholder="Owner Email">
+                            <input type="email" id="input-group1" placeholder="Owner NIC">
+                </div><!--input6-->
+                <button type="submit" class="btn btn-warning text-white">Save</button>
+              
+            </div><!--form-->
 
-                <div id="input4">
-                    <input name="rdate" type="text" id="input-group" placeholder="Return Date">
-                    <input name="rtime" type="text" id="input-group" placeholder="Return time">
-                    <input name="message" type="text" id="input-group1" placeholder="Any Message">
-                </div>
+        </form><!--form-->
 
-                <div id="input5">
-                    <h3 class="text-white">Client Details</h3>
-                </div>
-
-                <div id="input6">
-                    <input name="fname" type="text" id="input-group" placeholder="Full Nmae">
-                    <input name="pnum" type="number" id="input-group" placeholder="Phone Number">
-                    <input name="email" type="email" id="input-group1" placeholder="Email">
-                </div>
-                <button type="submit" class="btn btn-warning text-white">Submit Form</button>
-                <button type="reset" class="btn btn-primary">Clear Form</button>
-            </div>
-
-        </form>
-        
-    
-
-    </div>
+    </div><!--container-->
  </div>
 </body>
 </html>
