@@ -392,7 +392,7 @@ fieldset .logo {
 <form action="" method="POST">
     <tbody>
         <tr>
-            <td>Select Drug Name</td>
+            <td>Select Drug name</td>
             <td><input type="text" name="select drug name" value=""/></td>
         </tr>
          <tr>
@@ -424,10 +424,13 @@ fieldset .logo {
         </tr>
     </tbody>
 </form>
+<<<<<<< HEAD
 
         
         
 
+=======
+>>>>>>> ac2659a4f688850bf6b3b733289f0c6c8fb79b68
 
 
         
