@@ -375,13 +375,11 @@ fieldset .logo {
 
         <fieldset class="info">
 
-            Booking Details
+            Update Drugs
             <br>
             <p>
-                <br>
-                Dernière connexion il y a 3 heures à Paris.
-                <br>
-                <button style="margin-top: 1rem;">Booking Data</button>
+              
+                <button style="margin-top: 1rem;">Add new Drugs</button>
 
             </p>
 
@@ -389,80 +387,35 @@ fieldset .logo {
                 <i class="fas fa-shield-alt"></i>
             </div>
         </fieldset>
+<!--        
+--------------------------------------------------------------------------------------------------------------->
 
-
-        <div class="coordonate">
-                <div class="container">
-
-
-
-
-
-        <div class="coordonate">
-            
-      <table border="1" id="datatable">
-        <tbody>
-          <tr>
-            <th>TicketID</th>
-            <th>email</th>
-            <th>fullname</th>
-            <th>tel</th>
-            <th>from1</th>
-            <th>to1</th>
-            <th>depdate</th>
-            <th>deptime</th>
-            <th>airline</th>
-            <th>classtype</th>
-            <th>adult</th>
-            <th>children</th>
-            <th>kids</th>
-            <th>radio</th>
-            <th>rdate</th>
-            <th>rtime</th>
-            <th>message</th>
-          </tr>
         
-        <%
-               while(rs.next()){
-                 // out.println("\n"+rs.getString(2)+"\n");
-                 // out.println("\n"+rs.(4)+"\n");
-            %>
         
-          <tr>
-            <td><%=rs.getString("TicketID") %></td>
-            <td><%=rs.getString("email") %></td>
-            <td><%=rs.getString("fullname") %></td>
-            <td><%=rs.getString("tel") %></td>
-            <td><%=rs.getString("from1") %></td>
-            <td><%=rs.getString("to1") %></td>
-            <td><%=rs.getString("depdate") %></td>
-            <td><%=rs.getString("deptime") %></td>
-            <td><%=rs.getString("airline") %></td>
-            <td><%=rs.getString("classtype") %></td>
-            <td><%=rs.getString("adult") %></td>
-            <td><%=rs.getString("children") %></td>
-            <td><%=rs.getString("kids") %></td>
-            <td><%=rs.getString("radio") %></td>
-            <td><%=rs.getString("rdate") %></td>
-            <td><%=rs.getString("rtime") %></td>
-            <td><%=rs.getString("message") %></td>
-          </tr>
-          
-         
-            
-          </tr>
-        </tbody>
-        <% 
-            }
-            %>
-            
-      </table>
-            
-        </div>
 
-    </div>
-            
-        </div>
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+ 
+        
 
     </div>
 </body>
