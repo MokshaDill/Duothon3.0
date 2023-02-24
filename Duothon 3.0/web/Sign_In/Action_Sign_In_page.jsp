@@ -2,8 +2,8 @@
 <%@page import="java.sql.*" %>
 
 <%
-String Email = request.getParameter("Email");
-String Password = request.getParameter("Password");
+String Email = request.getParameter("email");
+String Password = request.getParameter("psw");
 
 session.setAttribute("Email", Email);
 
@@ -16,19 +16,19 @@ int z=0;
             
             z=1;
             session.setAttribute("Email", Email);
-            response.sendRedirect("login1.html");  // page 
+            response.sendRedirect("html2.html");  // page 
             
             
         }
         
         
        if(z==0){
-            response.sendRedirect("userlogin.jsp?msg=notexist");
+            response.sendRedirect("html.html");
         }  
     
 }catch(Exception e){
     System.out.print(e);
-    response.sendRedirect("userlogin.jsp?msg=invalid");
+    response.sendRedirect("html2.html");
 }
 
 %>
