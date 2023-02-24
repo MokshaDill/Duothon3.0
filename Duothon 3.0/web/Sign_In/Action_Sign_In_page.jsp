@@ -2,20 +2,20 @@
 <%@page import="java.sql.*" %>
 
 <%
-String email = request.getParameter("email");
-String password = request.getParameter("psw");
+String Email = request.getParameter("Email");
+String Password = request.getParameter("Password");
 
-session.setAttribute("email", email);
+session.setAttribute("Email", Email);
 
 int z=0;
     try{
         Connection con= ConnectionProvider.getCon();
         Statement st = con.createStatement();
-        ResultSet rs= st.executeQuery("select * from customer where email='"+email+"' and password='"+password+"'");
+        ResultSet rs= st.executeQuery("select * from pharmacy where Email='"+Email+"' and Password='"+Password+"'");
         while(rs.next()){
             
             z=1;
-            session.setAttribute("email", email);
+            session.setAttribute("Email", Email);
             response.sendRedirect("login1.html");  // page 
             
             

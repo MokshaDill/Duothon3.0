@@ -2,27 +2,27 @@
 <%@page import="java.sql.*" %>
 
 <%
-String uname = request.getParameter("uname");
-String email = request.getParameter("email");
-String password= request.getParameter("psw");
-String mobile = request.getParameter("mobile");
-String address="";
-String city="";
-String state="";
-String country="";
+String 	Pharmacy_Name = request.getParameter("Pharmacy_Name");
+String 	Email = request.getParameter("Email");
+String Address= request.getParameter("Address");
+String Pharmacy_Licence_Number = request.getParameter("Pharmacy_Licence_Number");
+String Password = request.getParameter("Password");
+String Pharmacy_Name="";
+String Email="";
+String Address="";
+String Pharmacy_Licence_Number="";
+PasswordString Password="";
 
 try{
     Connection con=ConnectionProvider.getCon();
-    PreparedStatement ps=con.prepareStatement("insert into customer values(?,?,?,?,?,?,?,?)");
-    ps.setString(1, uname);
-    ps.setString(2, email);
-    ps.setString(3, password);
-    ps.setString(4, mobile);
-    ps.setString(5, address);
-    ps.setString(6, city);
-    ps.setString(7, state);
-    ps.setString(8, country);
+    PreparedStatement ps=con.prepareStatement("insert into pharmacy values(?,?,?,?,?,?,?,?)");
+    ps.setString(1, Pharmacy_Name);
+    ps.setString(2, Email);
+    ps.setString(3, Address);
+    ps.setString(4, Pharmacy_Licence_Number);
+    ps.setString(5, );
     
+
     ps.executeUpdate();
     response.sendRedirect("userlogin.jsp?msg2=valid");
     
