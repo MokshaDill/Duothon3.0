@@ -114,7 +114,7 @@
             %>
         
           <tr>
-<!--            <td><%=rs.getString("ID") %></td>
+<!--         <td><%=rs.getString("ID") %></td>
             <td><%=rs.getString("Drug name") %></td>
             <td><%=rs.getString("Manufacturer") %></td>
             <td><%=rs.getString("Supplier") %></td>
