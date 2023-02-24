@@ -1,23 +1,8 @@
-
-<%@page import="java.sql.ResultSet"%>
-<%@page import="Servelt.ConnectionProvider"%>
-<%@page import="java.sql.Statement"%>
-<%@page import="java.sql.Connection"%>
-<%
-
-
-            Connection con=ConnectionProvider.getCon();
-            Statement st = con.createStatement();
-            
-           // con.prepareStatement("SELECT flight_id,flight_name,mpilot_name,duration FROM flight WHERE duration=?");
-            
-            
-              // 4.data retrieveing
-            String qry="SELECT * FROM inventory";
-            //where flyingfrom="+from+" and flyingto="+to+" and class="+classtype+" 
-                  
-            ResultSet rs = st.executeQuery(qry);
-%>
+<%-- 
+    Document   : inventory
+    Created on : Feb 24, 2023, 12:46:37 PM
+    Author     : moksh
+--%>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -26,12 +11,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Inventory Page</title>
+    <link rel="stylesheet" href="./css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-    <link href=style.css"" rel="stylesheet">
+
     <style>
-        
         :root{
     --bk: #181826;
     --border: 2px solid var(--bd);
@@ -340,7 +324,6 @@ fieldset .logo {
 
 
 }
-
     </style>
 
 </head>
@@ -357,62 +340,82 @@ fieldset .logo {
             <li class="item"><a ><i class="fas fa-home"></i>Inventory</a></li>
             <li class="item"><a><i class="fas fa-chart-line"></i>Profile</a></li>
             <li class="item"><a><i class="fas fa-bell"></i>Logout</a></li>
+            
         </div>
     </ul>
 
     <br>
 
-    <h1 style="text-transform: uppercase;" class="h">User Account Details...</h1>
-    <button style="float: right">Add New Drug</button>
+    <h1 style="text-transform: uppercase;" class="h">Welcome-Admin</h1>
+
     <br>
 
     <div class="container">
 
 
-     <table border="1" id="datatable">
-        <tbody>
-          <tr>
-            <th>ID</th>
-            <th>Drug Name</th>
-            <th>Manufacturer</th>
-            <th>Supplier</th>
-            <th>NDC</th>
-            <th>Expiration Date</th>
-            <th>Quantity</th>
-            <th>Unit Price</th>
-          </tr>
-        
-        <%
-               while(rs.next()){
-                 // out.println("\n"+rs.getString(2)+"\n");
-                 // out.println("\n"+rs.(4)+"\n");
-            %>
-        
-          <tr>
-            <td><%=rs.getString("ID") %></td>
-            <td><%=rs.getString("Drug_Name") %></td>
-            <td><%=rs.getString("Manufacturer") %></td>
-            <td><%=rs.getString("Supplier") %></td>
-            <td><%=rs.getString("NDC") %></td>
-            <td><%=rs.getString("Explaration_Date") %></td>
-            <td><%=rs.getString("Quantity") %></td>
-            <td><%=rs.getString("Unit_Price") %></td>
-          </tr>
-          
-         
-           
-          </tr>
-        </tbody>
-        <% 
-            }
-            %>
-            
-      </table>
-            
-        
 
+        <fieldset class="info">
 
-       
+                <div style="align-items: flex-start">
+                    Inventory
+                </div>
+<!--            <div style="">
+                        <button>Add new Drug</button>
+                    </div>-->
+            
+        </fieldset>
+
+        <fieldset class="info">
+
+            Update Drugs
+            <br>
+            <p>
+              
+                <button style="margin-top: 1rem;">Update new Drugs</button>
+
+            </p>
+
+            <div class="logo">
+                <i class="fas fa-shield-alt"></i>
+            </div>
+        </fieldset>
+<!--        
+--------------------------------------------------------------------------------------------------------------->
+<form action="" method="POST">
+    <table>
+        <tr>
+            <td>Select Drug name</td>
+            <td><input type="text" name="select drug name" value=""/></td>
+        </tr>
+         <tr>
+            <td>Supplier</td>
+            <td><input type="text" name="supplier" value=""/></td>
+        </tr>
+        <tr>
+            <td>Select Expiration Date</td>
+            <td><input type="text" name="date" value=""/></td>
+        </tr>
+        <tr>
+            <td>Manufacture</td>
+            <td><input type="text" name="manu" value=""/></td>
+        </tr>
+        <tr>
+            <td>National ID</td>
+            <td><input type="text" name="ndc" value=""/></td>
+        </tr>
+        <tr>
+            <td>Quantity on hand</td>
+            <td><input type="text" name="hand" value=""/></td>
+        </tr>
+        <tr>
+            <td>Unit Price</td>
+            <td><input type="text" name="price" value=""/></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Update DRUG"/></td>
+        </tr>
+    </table>
+</form>
 
     </div>
 </body>
