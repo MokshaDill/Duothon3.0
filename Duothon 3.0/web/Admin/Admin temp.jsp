@@ -365,14 +365,6 @@ fieldset .logo {
             
         </fieldset>
 
-        
-
-        
-
-
-
-       
-
         <fieldset class="info">
 
             Update Drugs
@@ -390,7 +382,7 @@ fieldset .logo {
 <!--        
 --------------------------------------------------------------------------------------------------------------->
 <form action="" method="POST">
-    <tbody>
+    <table>
         <tr>
             <td>Select Drug name</td>
             <td><input type="text" name="select drug name" value=""/></td>
@@ -420,40 +412,10 @@ fieldset .logo {
             <td><input type="text" name="price" value=""/></td>
         </tr>
         <tr>
-            <td><input type="Add Drug" value="ADD DRUG"/></td>
+            <td><input type="submit" value="ADD DRUG"/></td>
         </tr>
-    </tbody>
+    </table>
 </form>
-<<<<<<< HEAD
-
-        
-        
-
-=======
->>>>>>> ac2659a4f688850bf6b3b733289f0c6c8fb79b68
-
-
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-
-        
- 
-        
 
     </div>
 </body>
