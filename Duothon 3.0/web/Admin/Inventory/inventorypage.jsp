@@ -356,7 +356,7 @@ fieldset .logo {
         <div class="text">
             <li class="item"><a ><i class="fas fa-home"></i>Inventory</a></li>
             <li class="item"><a><i class="fas fa-chart-line"></i>Profile</a></li>
-            <li class="item"><a><i class="fas fa-bell"></i>Logout</a></li>
+            <li class="item"><a href="${pageContext.request.contextPath}/logout"><i class="fas fa-bell"></i>Logout</a></li>
         </div>
     </ul>
 
