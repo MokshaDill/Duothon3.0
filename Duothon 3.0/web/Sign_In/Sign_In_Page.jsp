@@ -17,9 +17,9 @@
         <div class="signin-signup">
             
             
-          <form action="userloginOneActionPage.jsp" method="" class="sign-in-form">
+            <form action="Action_Sign_In_page.jsp" method="" class="sign-in-form">
             
-              <h2 class="title">Sign in</h2>
+              <h2 class="title">Sign In</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
               <input type="text" name="name" placeholder="Email" />
@@ -30,20 +30,10 @@
             </div>
             <input type="submit" value="Login" class="btn solid" />
             <p class="social-text">Or Sign up with social platforms</p>
-            <div class="social-media">
-              <a href="#" class="social-icon">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-google"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </div>
+           
+            
+            
+            
             <%
       String msg = request.getParameter("msg");
       
@@ -62,40 +52,59 @@
           </form>
             
             
-          <form action="userloginTwoActionPage.jsp" method="" class="sign-up-form">
+          <form action="Action_Sign_Up.jsp" method="" class="sign-up-form">
+              
             <h2 class="title">Sign up</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" name="uname" placeholder="Username" />
+              <input type="text" name="uname" placeholder="Pharmacy Name" />
             </div>
+            
             <div class="input-field">
               <i class="fas fa-envelope"></i>
               <input type="email" name="email" placeholder="Email" />
             </div>
+            
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" name="psw" placeholder="Password" />
+              <input type="text" name="add" placeholder="address" />
             </div>
+            
             <div class="input-field">
               <i class="fas fa-lock"></i>
               <input type="text" name="tel" placeholder="Mobile Number" />
             </div>
-            <input type="submit" class="btn" value="Sign up" />
-            <p class="social-text">Or Sign up with social platforms</p>
-            <div class="social-media">
-              <a href="#" class="social-icon">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-google"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
+            
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="text" name="lic" placeholder="Pharmacy License Number" />
             </div>
+            
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" name="psw" placeholder="Password" />
+            </div>
+            
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" name="psw" placeholder="Conform Password" />
+            </div>
+            
+            <div>
+              <input type="checkbox" name="check" /> I Agree to <a href="">Terms of Service</a> and <a href="">privacy policy</a>. 
+            </div>
+            
+            <input type="submit" class="btn" value="Sign up" />
+            
+            
+            
+            <p>Already have an account? <a href="">Sign In</a></p>
+            
+            
+            
+            
+            
+            
              <%
                 String msg2= request.getParameter("msg2");
 
@@ -124,7 +133,7 @@
               Sign up
             </button>
           </div>
-          <img src="st_1.png" class="image" alt="" />
+            <img src="" class="image" alt="" />
         </div>
         <div class="panel right-panel">
           <div class="content">
@@ -136,7 +145,7 @@
               Sign in
             </button>
           </div>
-          <img src="st_3.png" class="image" alt="" />
+            <img src="image/c2.jpg" class="image" alt="" style="size: 100px"/>
         </div>
       </div>
     </div>

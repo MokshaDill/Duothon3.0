@@ -83,64 +83,7 @@
         </fieldset>
 
 
-        <div class="coordonate">
-            <div class="container"></div>
-
-
-
-
-
-            <div class="coordonate"></div>
-            
-      <table border="1" id="datatable">
-        <tbody>
-          <tr>
-            <th>ID</th>
-            <th>Drug name</th>
-            <th>Manufacturer</th>
-            <th>Supplier</th>
-            <th>NDC</th>
-            <th>Expiration date</th>
-            <th>Quantity</th>
-            <th>Unit Price</th>
-            <th>Actions</th>
-           
-          </tr>
-        
-        <%
-               while(rs.next()){
-                 // out.println("\n"+rs.getString(2)+"\n");
-                 // out.println("\n"+rs.(4)+"\n");
-            %>
-        
-          <tr>
-<!--         <td><%=rs.getString("ID") %></td>
-            <td><%=rs.getString("Drug name") %></td>
-            <td><%=rs.getString("Manufacturer") %></td>
-            <td><%=rs.getString("Supplier") %></td>
-            <td><%=rs.getString("NDC") %></td>
-            <td><%=rs.getString("Expiration date") %></td>
-            <td><%=rs.getString("Quantity") %></td>
-            <td><%=rs.getString("Unit Price") %></td>
-            <td><%=rs.getString("Actions") %></td>
-          </tr>
-          
-         
-           
-          </tr>
-        </tbody>
-        <% 
-            }
-            %>
-            
-      </table>
-            
-        </div>
-
-    </div>
-            
-        </div>
-
+       
     </div>
 </body>
 
