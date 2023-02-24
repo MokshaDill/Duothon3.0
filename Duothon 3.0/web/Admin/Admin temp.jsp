@@ -408,7 +408,7 @@ fieldset .logo {
             <td><input type="text" name="manu" value=""/></td>
         </tr>
         <tr>
-            <td>NDC</td>
+            <td>National ID</td>
             <td><input type="text" name="ndc" value=""/></td>
         </tr>
         <tr>
