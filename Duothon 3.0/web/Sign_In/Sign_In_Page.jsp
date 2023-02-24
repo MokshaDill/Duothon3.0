@@ -17,7 +17,7 @@
         <div class="signin-signup">
             
             
-            <form action="Action_Sign_In_page.jsp" method="" class="sign-in-form">
+            <form action="../Admin/Inventory/inventorypage.jsp" method="" class="sign-in-form">
             
               <h2 class="title">Sign In</h2>
             <div class="input-field">
