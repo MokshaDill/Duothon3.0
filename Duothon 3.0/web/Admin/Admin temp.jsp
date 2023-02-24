@@ -389,10 +389,48 @@ fieldset .logo {
         </fieldset>
 <!--        
 --------------------------------------------------------------------------------------------------------------->
+<form action="" method="POST">
+    <tbody>
+        <tr>
+            <td>Select Drug name</td>
+            <td><input type="text" name="select drug name" value=""/></td>
+        </tr>
+         <tr>
+            <td>Supplier</td>
+            <td><input type="text" name="supplier" value=""/></td>
+        </tr>
+        <tr>
+            <td>Select Expiration Date</td>
+            <td><input type="text" name="date" value=""/></td>
+        </tr>
+        <tr>
+            <td>Manufacture</td>
+            <td><input type="text" name="manu" value=""/></td>
+        </tr>
+        <tr>
+            <td>National ID</td>
+            <td><input type="text" name="ndc" value=""/></td>
+        </tr>
+        <tr>
+            <td>Quantity on hand</td>
+            <td><input type="text" name="hand" value=""/></td>
+        </tr>
+        <tr>
+            <td>Unit Price</td>
+            <td><input type="text" name="price" value=""/></td>
+        </tr>
+        <tr>
+            <td><input type="Add Drug" value="ADD DRUG"/></td>
+        </tr>
+    </tbody>
+</form>
+<<<<<<< HEAD
 
         
         
 
+=======
+>>>>>>> ac2659a4f688850bf6b3b733289f0c6c8fb79b68
 
 
         
